@@ -1,0 +1,22 @@
+# --- Gradle i build ---
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Android Studio / IntelliJ ---
+*.iml
+.idea/
+*.hprof
+
+# --- ścieżki i klucze ---
+local.properties
+*.jks
+*.keystore
+keystore.properties
+
+# --- system ---
+.DS_Store
+Thumbs.db
