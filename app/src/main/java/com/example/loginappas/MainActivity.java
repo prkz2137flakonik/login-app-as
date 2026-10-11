@@ -1,6 +1,7 @@
 package com.example.loginappas;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,13 +18,18 @@ public class MainActivity extends AppCompatActivity {
 
         tvDisplay = findViewById(R.id.tvDisplay);
 
-        Button btn7 = findViewById(R.id.btn7);
-        Button btn8 = findViewById(R.id.btn8);
-        Button btn9 = findViewById(R.id.btn9);
+        View.OnClickListener symbolListener =
+                v -> appendSymbol(((Button) v).getText().toString());
 
-        btn7.setOnClickListener(v -> appendSymbol("7"));
-        btn8.setOnClickListener(v -> appendSymbol("8"));
-        btn9.setOnClickListener(v -> appendSymbol("9"));
+        int[] symbolIds = {
+                R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4,
+                R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9,
+                R.id.btnComma
+        };
+
+        for (int id : symbolIds) {
+            findViewById(id).setOnClickListener(symbolListener);
+        }
     }
 
     private void appendSymbol(String symbol) {
