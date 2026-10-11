@@ -8,7 +8,6 @@
     android:padding="8dp"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/tvDisplay"
         android:layout_width="match_parent"
@@ -27,10 +26,10 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="+" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="−" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="×" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="÷" />
+        <Button android:id="@+id/btnAdd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="+" />
+        <Button android:id="@+id/btnSub" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="−" />
+        <Button android:id="@+id/btnMul" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="×" />
+        <Button android:id="@+id/btnDiv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="÷" />
     </LinearLayout>
 
 
@@ -39,9 +38,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="7" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="8" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="9" />
+        <Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="7" />
+        <Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="8" />
+        <Button android:id="@+id/btn9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="9" />
     </LinearLayout>
 
 
@@ -50,9 +49,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="4" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="5" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="6" />
+        <Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="4" />
+        <Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="5" />
+        <Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="6" />
     </LinearLayout>
 
 
@@ -61,9 +60,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="2" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3" />
+        <Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1" />
+        <Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="2" />
+        <Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3" />
     </LinearLayout>
 
 
@@ -72,13 +71,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0" />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="," />
-        <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="=" />
+        <Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0" />
+        <Button android:id="@+id/btnComma" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="," />
+        <Button android:id="@+id/btnEquals" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="=" />
     </LinearLayout>
 
 
     <Button
+        android:id="@+id/btnClear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
