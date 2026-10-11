@@ -1,4 +1,5 @@
 
+aplikacja startuje z ekranu licznika.
 
 ekran rejestracji
 
@@ -38,3 +39,19 @@ gdyby wyswietlacz mial pokazywac maksymalnie 10 znakow:
 
 - po etapie 1 (osobna metoda na kazda cyfre): trzeba poprawic -10 miejsc- (kazda metode `append7`, `append8` itd.).
 - po etapie 3(wspolny listener): trzeba poprawic -1 miejsce- – tylko metode `appendSymbol`.
+
+
+## zadanie 2 – Licznik klikniec
+
+Prosta aplikacja: +1, -1, Reset.
+Blokada wartosci ujemnych (Toast).
+
+### sposoby podpiecia klikniec
+1. Wspolny listener – przyciski +1 i -1 (`changeListener` w onCreate)
+2. Lambda – przycisk Reset (`setOnClickListener(v -> { ... })`)
+
+### jak przelaczac ekrany
+W MainActivity.java zmien setContentView:
+- licznik: `R.layout.activity_counter`
+- kalkulator: `R.layout.activity_calculator`
+- rejestracja: `R.layout.activity_main`
