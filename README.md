@@ -30,3 +30,11 @@ Uklad ma 2 poziomy zagniezdzenia:
 - `=` → weight = 2
 
 dzieki temu `=` zajmuje dwa razy wiecej miejsca niz pozostale przyciski.
+
+
+## pytanie o etapy refaktoryzacji
+
+gdyby wyswietlacz mial pokazywac maksymalnie 10 znakow:
+
+- po etapie 1 (osobna metoda na kazda cyfre): trzeba poprawic -10 miejsc- (kazda metode `append7`, `append8` itd.).
+- po etapie 3(wspolny listener): trzeba poprawic -1 miejsce- – tylko metode `appendSymbol`.
