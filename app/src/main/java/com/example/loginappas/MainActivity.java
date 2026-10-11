@@ -21,20 +21,12 @@ public class MainActivity extends AppCompatActivity {
         Button btn8 = findViewById(R.id.btn8);
         Button btn9 = findViewById(R.id.btn9);
 
-        btn7.setOnClickListener(v -> append7());
-        btn8.setOnClickListener(v -> append8());
-        btn9.setOnClickListener(v -> append9());
+        btn7.setOnClickListener(v -> appendSymbol("7"));
+        btn8.setOnClickListener(v -> appendSymbol("8"));
+        btn9.setOnClickListener(v -> appendSymbol("9"));
     }
 
-    private void append7() {
-        tvDisplay.setText(tvDisplay.getText().toString() + "7");
-    }
-
-    private void append8() {
-        tvDisplay.setText(tvDisplay.getText().toString() + "8");
-    }
-
-    private void append9() {
-        tvDisplay.setText(tvDisplay.getText().toString() + "9");
+    private void appendSymbol(String symbol) {
+        tvDisplay.setText(tvDisplay.getText().toString() + symbol);
     }
 }
